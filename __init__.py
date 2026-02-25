@@ -12,6 +12,7 @@ PROJECT_META = {
     'category': 'Data Visualization',
     'nav_group': 'Data & Visualization',
     'tags': ['chart.js', 'data visualization', 'duolingo'],
+    'screenshot': 'duolingo_visualizer.png',
 }
 
 bp = Blueprint(
