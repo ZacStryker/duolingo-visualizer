@@ -4,7 +4,17 @@
 
 {% block head_extra %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-<style>.back-link:hover { color: #58cc02; }</style>
+<style>
+/* ── Project accent tokens ────────────────────────────────────── */
+:root {
+    --project-accent:        #14b8a6;
+    --project-accent-text:   #5eead4;
+    --project-accent-bg:     rgba(20, 184, 166, 0.08);
+    --project-accent-active: rgba(20, 184, 166, 0.15);
+    --project-accent-rim:    rgba(20, 184, 166, 0.25);
+}
+.back-link:hover { color: var(--project-accent-text); }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -24,7 +34,7 @@
     <div class="viz-card">
         <div class="viz-title">Daily XP Activity</div>
         <div class="heatmap-container">
-            <canvas id="heatmapCanvas"></canvas>
+            <canvas id="heatmapCanvas" role="img" aria-label="GitHub-style calendar heatmap showing daily Duolingo XP activity over time"></canvas>
             <div class="heatmap-tooltip" id="heatmapTooltip"></div>
         </div>
         <div class="heatmap-legend" id="heatmapLegend"></div>
@@ -33,7 +43,7 @@
     <div class="viz-card">
         <div class="viz-title">Duolingo Lessons Completed</div>
         <div class="chart-container">
-            <canvas id="lessonsChart"></canvas>
+            <canvas id="lessonsChart" role="img" aria-label="Line chart showing daily lessons completed over time"></canvas>
         </div>
     </div>
 

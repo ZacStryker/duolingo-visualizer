@@ -8,7 +8,7 @@ PROJECT_META = {
     'name': 'Duolingo Visualizer',
     'description': 'Interactive dashboard visualizing Dutch language learning progress from Duolingo, with stats and charts.',
     'icon': 'language',
-    'color': '#58cc02',
+    'color': '#14b8a6',
     'category': 'Data Visualization',
     'nav_group': 'Data & Visualization',
     'tags': ['chart.js', 'data visualization', 'duolingo'],
